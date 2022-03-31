@@ -5,6 +5,7 @@
   "repository": "https://github.com/LucasMonteiroi/husky-cz-commits.git",
   "license": "MIT",
   "scripts": {
+    "post:install": "git config alias.cz '!npm run commit'",
     "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts",
     "lint-staged": "lint-staged — config .lintstagedrc",
     "commit": "cz",
